@@ -24,7 +24,6 @@ class HomePage extends ConsumerWidget {
               icon: Image.asset(Assets.imagesBookmark), label: ''),
         ],
         currentIndex: index,
-        selectedItemColor: Colors.amber[800],
         onTap: ref.read(indexNotifierProvider.notifier).onChange,
       ),
     );
