@@ -5,6 +5,7 @@ import 'package:movie_app/features/dashboard/domain/entities/movie.dart';
 import 'package:movie_app/features/dashboard/domain/entities/movie_details.dart';
 import 'package:movie_app/features/dashboard/presentation/pages/movie_details_page.dart';
 import 'package:movie_app/features/dashboard/presentation/widgets/movie_tags.dart';
+import 'package:movie_app/features/dashboard/presentation/widgets/movie_tags_id.dart';
 import 'package:movie_app/features/dashboard/presentation/widgets/rating.dart';
 import 'package:movie_app/shared/theme/app_colors.dart';
 import 'package:movie_app/shared/theme/app_fonts.dart';
@@ -70,8 +71,7 @@ class PopularMovieItem extends StatelessWidget {
                   Rating(rating: movie.voteAverage),
                   Container(
                     margin: const EdgeInsets.symmetric(vertical: 8),
-                    // TODO implement fetch Genre by ID
-                    child: MovieTags(tags: [Genre(id: 54, name: 'Action'), Genre(id: 54, name: 'Science Fiction')]),
+                   child: MovieTagsById(tags: movie.genreIds),
                   ),
                   Row(
                     mainAxisSize: MainAxisSize.min,
