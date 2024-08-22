@@ -1,0 +1,70 @@
+name: movie_app
+description: "A new Flutter project."
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  cached_network_image: ^3.4.1
+  cupertino_icons: ^1.0.8
+  dartz: ^0.10.1
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1
+  freezed_annotation: ^2.4.4
+  http: ^1.2.2
+  json_annotation: ^4.9.0
+  riverpod_annotation: ^2.3.5
+  youtube_player_flutter: ^8.1.2
+
+dev_dependencies:
+  build_runner: ^2.4.12
+  custom_lint: ^0.6.5
+  flutter_lints: ^4.0.0
+  flutter_test:
+    sdk: flutter
+  freezed: ^2.5.7
+  json_serializable: ^6.8.0
+  riverpod_generator: ^2.4.3
+  riverpod_lint: ^2.3.13
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Merriweather
+      fonts:
+        - asset: assets/fonts/merriweather/Merriweather-Black.ttf
+          weight: 900
+        - asset: assets/fonts/merriweather/Merriweather-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/merriweather/Merriweather-Light.ttf
+          weight: 300
+        - asset: assets/fonts/merriweather/Merriweather-Regular.ttf
+    
+    - family: Mulish
+      fonts:
+        - asset: assets/fonts/mulish/Mulish-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/mulish/Mulish-Light.ttf
+          weight: 300
+        - asset: assets/fonts/mulish/Mulish-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/mulish/Mulish-Regular.ttf
+
+    - family: Muli
+      fonts:
+        - asset: assets/fonts/muli/Muli.ttf
+
+flutter_assets:
+  assets_path: assets/images/
+  output_path: lib/shared/theme/
+  filename: app_images.dart
+  field_prefix: 
